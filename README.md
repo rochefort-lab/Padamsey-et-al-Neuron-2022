@@ -2,9 +2,11 @@
 
 Code for paper
 
-## Computational model
+# Computational model
 
 Code can found in [computational-model](computational-model).
+
+# Figures
 
 ## Figure 1
 
