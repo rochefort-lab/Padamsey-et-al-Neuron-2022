@@ -1,0 +1,362 @@
+{load_file("nrngui.hoc")}
+objectvar save_window_, rvp_
+objectvar scene_vector_[4]
+objectvar ocbox_, ocbox_list_, scene_, scene_list_
+{ocbox_list_ = new List()  scene_list_ = new List()}
+{pwman_place(0,0,0)}
+
+//Begin ChannelBuild[0] managed KSChan[0]
+{
+load_file("chanbild.hoc", "ChannelBuild")
+}
+{ion_register("na", 1)}
+{ocbox_ = new ChannelBuild(1)}
+{object_push(ocbox_)}
+{genprop.set_data("ch_ctr_na", 1, 1, 8, "na")}
+{genprop.set_defstr(0.024, 0)}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(1)}
+{tobj.set_state("I6", 0, 200, 110)}
+{tobj.set_state("I5", 0, 170, 110)}
+{tobj.set_state("I4", 0, 140, 110)}
+{tobj.set_state("I3", 0, 110, 110)}
+{tobj.set_state("I2", 0, 80, 110)}
+{tobj.set_state("I1", 0, 50, 110)}
+{tobj.set_state("C1", 0, 50, 140)}
+{tobj.set_state("C2", 0, 80, 140)}
+{tobj.set_state("C3", 0, 110, 140)}
+{tobj.set_state("C4", 0, 140, 140)}
+{tobj.set_state("C5", 0, 170, 140)}
+{tobj.set_state("O", 1, 200, 140)}
+{tobj.set_trans(6, 7, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+2200
+0.0417
+25
+{tobj.transitions.object(0).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+12
+-0.0417
+25
+{tobj.transitions.object(0).set_f(1, 2, tobj1)}
+{tobj.set_trans(7, 8, 0)}
+{tobj.transitions.object(1).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1650
+0.0417
+25
+{tobj.transitions.object(1).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+24
+-0.0417
+25
+{tobj.transitions.object(1).set_f(1, 2, tobj1)}
+{tobj.set_trans(8, 9, 0)}
+{tobj.transitions.object(2).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1100
+0.0417
+25
+{tobj.transitions.object(2).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+36
+-0.0417
+25
+{tobj.transitions.object(2).set_f(1, 2, tobj1)}
+{tobj.set_trans(9, 10, 0)}
+{tobj.transitions.object(3).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+550
+0.0417
+25
+{tobj.transitions.object(3).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+48
+-0.0417
+25
+{tobj.transitions.object(3).set_f(1, 2, tobj1)}
+{tobj.set_trans(10, 11, 0)}
+{tobj.transitions.object(4).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+250
+{tobj.transitions.object(4).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+60
+{tobj.transitions.object(4).set_f(1, 1, tobj1)}
+{tobj.set_trans(5, 6, 0)}
+{tobj.transitions.object(5).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+2
+{tobj.transitions.object(5).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.01
+{tobj.transitions.object(5).set_f(1, 1, tobj1)}
+{tobj.set_trans(4, 7, 0)}
+{tobj.transitions.object(6).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.3759
+{tobj.transitions.object(6).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.0251
+{tobj.transitions.object(6).set_f(1, 1, tobj1)}
+{tobj.set_trans(3, 8, 0)}
+{tobj.transitions.object(7).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.0707
+{tobj.transitions.object(7).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.063
+{tobj.transitions.object(7).set_f(1, 1, tobj1)}
+{tobj.set_trans(2, 9, 0)}
+{tobj.transitions.object(8).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.0133
+{tobj.transitions.object(8).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.1581
+{tobj.transitions.object(8).set_f(1, 1, tobj1)}
+{tobj.set_trans(1, 10, 0)}
+{tobj.transitions.object(9).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.0025
+{tobj.transitions.object(9).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.3969
+{tobj.transitions.object(9).set_f(1, 1, tobj1)}
+{tobj.set_trans(0, 11, 0)}
+{tobj.transitions.object(10).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+0.05
+{tobj.transitions.object(10).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+8
+{tobj.transitions.object(10).set_f(1, 1, tobj1)}
+{tobj.set_trans(5, 4, 0)}
+{tobj.transitions.object(11).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+5522
+0.0417
+25
+{tobj.transitions.object(11).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+2.256
+-0.0417
+25
+{tobj.transitions.object(11).set_f(1, 2, tobj1)}
+{tobj.set_trans(4, 3, 0)}
+{tobj.transitions.object(12).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+4141.5
+0.0417
+25
+{tobj.transitions.object(12).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+4.511
+-0.0417
+25
+{tobj.transitions.object(12).set_f(1, 2, tobj1)}
+{tobj.set_trans(3, 2, 0)}
+{tobj.transitions.object(13).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+2761
+0.0417
+25
+{tobj.transitions.object(13).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+6.767
+-0.0417
+25
+{tobj.transitions.object(13).set_f(1, 2, tobj1)}
+{tobj.set_trans(2, 1, 0)}
+{tobj.transitions.object(14).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1380.5
+0.0417
+25
+{tobj.transitions.object(14).set_f(0, 2, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+9.023
+-0.0417
+25
+{tobj.transitions.object(14).set_f(1, 2, tobj1)}
+{tobj.set_trans(1, 0, 0)}
+{tobj.transitions.object(15).settype(0, "")}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+250
+{tobj.transitions.object(15).set_f(0, 1, tobj1)}
+{tobj1 = new Vector(1)  for (i=0; i < 1; i += 1) tobj1.x[i] = fscan() }
+60
+{tobj.transitions.object(15).set_f(1, 1, tobj1)}
+{tobj.end_restore()}
+end_restore()
+{genprop.set_single(0)}
+{set_alias(0)}
+{usetable(0)}
+{object_pop()}
+{
+ocbox_.map("ChannelBuild[0] managed KSChan[0]", 586, 34, 207, 276.3)
+}
+objref ocbox_
+//End ChannelBuild[0] managed KSChan[0]
+
+
+//Begin ChannelBuild[1] managed KSChan[1]
+{
+load_file("chanbild.hoc", "ChannelBuild")
+}
+{ion_register("k", 1)}
+{ocbox_ = new ChannelBuild(1)}
+{object_push(ocbox_)}
+{genprop.set_data("ch_ctr_kdr", 1, 1, 10, "k")}
+{genprop.set_defstr(0.003, 0)}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(1)}
+{tobj.set_state("C1", 0, 60, 130)}
+{tobj.set_state("C2", 0, 100, 130)}
+{tobj.set_state("C3", 0, 140, 130)}
+{tobj.set_state("C4", 0, 180, 130)}
+{tobj.set_state("O", 1, 220, 130)}
+{tobj.set_trans(0, 1, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+2
+0.1
+-19
+{tobj.transitions.object(0).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.625
+-0.0125
+-29
+{tobj.transitions.object(0).set_f(1, 2, tobj1)}
+{tobj.set_trans(1, 2, 0)}
+{tobj.transitions.object(1).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1.5
+0.1
+-19
+{tobj.transitions.object(1).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1.25
+-0.0125
+-29
+{tobj.transitions.object(1).set_f(1, 2, tobj1)}
+{tobj.set_trans(2, 3, 0)}
+{tobj.transitions.object(2).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1
+0.1
+-19
+{tobj.transitions.object(2).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1.875
+-0.0125
+-29
+{tobj.transitions.object(2).set_f(1, 2, tobj1)}
+{tobj.set_trans(3, 4, 0)}
+{tobj.transitions.object(3).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.5
+0.1
+-19
+{tobj.transitions.object(3).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+2.5
+-0.0125
+-29
+{tobj.transitions.object(3).set_f(1, 2, tobj1)}
+{tobj.end_restore()}
+end_restore()
+{genprop.set_single(0)}
+{set_alias(0)}
+{usetable(0)}
+{object_pop()}
+{
+ocbox_.map("ChannelBuild[1] managed KSChan[1]", 942, 27, 207, 233.1)
+}
+objref ocbox_
+//End ChannelBuild[1] managed KSChan[1]
+
+
+//Begin ChannelBuild[2] managed KSChan[2]
+{
+load_file("chanbild.hoc", "ChannelBuild")
+}
+{ion_register("k", 1)}
+{ocbox_ = new ChannelBuild(1)}
+{object_push(ocbox_)}
+{genprop.set_data("ch_ctr_subchan", 1, 1, 10, "k")}
+{genprop.set_defstr(0.003, 0)}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(1)}
+{tobj.set_state("C1", 0, 60, 130)}
+{tobj.set_state("C2", 0, 100, 130)}
+{tobj.set_state("C3", 0, 140, 130)}
+{tobj.set_state("C4", 0, 180, 130)}
+{tobj.set_state("O", 1, 220, 130)}
+{tobj.set_trans(0, 1, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.4
+0.1
+-55
+{tobj.transitions.object(0).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.125
+-0.0125
+-65
+{tobj.transitions.object(0).set_f(1, 2, tobj1)}
+{tobj.set_trans(1, 2, 0)}
+{tobj.transitions.object(1).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.3
+0.1
+-55
+{tobj.transitions.object(1).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.25
+-0.0125
+-65
+{tobj.transitions.object(1).set_f(1, 2, tobj1)}
+{tobj.set_trans(2, 3, 0)}
+{tobj.transitions.object(2).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.2
+0.1
+-55
+{tobj.transitions.object(2).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.375
+-0.0125
+-65
+{tobj.transitions.object(2).set_f(1, 2, tobj1)}
+{tobj.set_trans(3, 4, 0)}
+{tobj.transitions.object(3).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.1
+0.1
+-55
+{tobj.transitions.object(3).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.5
+-0.0125
+-65
+{tobj.transitions.object(3).set_f(1, 2, tobj1)}
+{tobj.end_restore()}
+end_restore()
+{genprop.set_single(0)}
+{set_alias(0)}
+{usetable(0)}
+{object_pop()}
+{
+ocbox_.map("ChannelBuild[2] managed KSChan[2]", 942, 27, 207, 233.1)
+}
+objref ocbox_
+//End ChannelBuild[2] managed KSChan[2]
+
+
+objectvar scene_vector_[1]
+{doNotify()}
