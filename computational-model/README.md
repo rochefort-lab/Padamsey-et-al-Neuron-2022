@@ -12,10 +12,10 @@ We ran the simulations and visualised results with jupyter notebooks (.ipynb fil
 | File           | Description | 
 | ---------------    | ----------- | 
 | `simu_toy_model_passive.ipynb`  |  Toy model (Figure 3/ H-K) <br />Passive components only, no voltage-gated channels |
-| `simu_deterministic_model.ipynb`  |  Deterministic channels model  (Figure 5/ C-F) <br />- Simulate synaptic input trial-trial variability <br />- Input/Output and tuning curves|
-| `simu_stochastic_model.ipynb`  |  Stochastic channels model  (Figure 5/ I-L) <br />- Voltage-dependent membrane noise <br />- Input/Output and tuning curves|
-| `simu_trace_detchannels.ipynb`  |  Deterministic channels model  (Figure 5/ B) <br />- Simulate synaptic input trial-trial variability <br />- Temporal traces|
-| `simu_trace_stochannels.ipynb`  |  Stochastic channels model  (Figure 5/ I-L) <br />- Voltage-dependent membrane noise <br />- Temporal traces|
+| `simu_deterministic_model.ipynb`  |  Input/Output and tuning curves (Figure 5/ C-F) <br />- Deterministic channels model <br />- Simulate synaptic input trial-trial variability|
+| `simu_stochastic_model.ipynb`  |  Input/Output and tuning curves (Figure 5/ I-L) <br />- Stochastic channels model<br />- Voltage-dependent membrane noise|
+| `simu_trace_detchannels.ipynb`  |  Temporal traces (Figure 5/ B) <br />- Deterministic channels model <br />- Simulate synaptic input trial-trial variability|
+| `simu_trace_stochannels.ipynb`  |  Temporal traces (Figure 5/ H) <br />- Stochastic channels model <br />- Voltage-dependent membrane noise |
 
 
 ## Channels models
