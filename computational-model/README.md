@@ -2,7 +2,11 @@
 
 Neuron model: Hodgkin-Huxley type, single compartment.
 
-Numerical simulations were performed using the NEURON simulation environment interfaced with Python (https://www.neuron.yale.edu/neuron/). Analysis was done in Python, channel calibration in MATLAB.
+Numerical simulations were performed using the NEURON simulation environment interfaced with Python:
+
+https://www.neuron.yale.edu/neuron/ 
+
+Analysis was done in Python, channel calibration in MATLAB.
 
 
 ## Simulation notebooks
@@ -32,9 +36,12 @@ Custom modules imported in the simulation jupyter notebooks. The .py files are i
 
 
 
-## Channels models
+## Ion channels models
 
-Custom channels were defined using NEURON's Channel Builder:
+Custom scripts were written in MATLAB to adjust the parameters of the voltage-gated channels (Na and Kdr). They can be found in the folder [matlab-calibrate-channels](matlab-calibrate-channels). The main scripts for calibration are `main_voltage_step_channels.m` and `main_input_current_trace.m`.
+ 
+
+The custom ion channels were then defined using NEURON's Channel Builder:
 
 https://www.neuron.yale.edu/neuron/static/docs/chanlbild/main.html
 
@@ -44,5 +51,7 @@ All channels are saved in a single session file, and can be found in the folder 
 | ---------------    | ----------- | 
 | `ch_carter_subtchan.ses`  |  Deterministic channels |
 | `stch_carter_subtchan.ses`  |  Stochastic channels |
+
+
 
 
