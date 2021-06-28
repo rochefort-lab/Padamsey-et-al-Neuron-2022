@@ -1,5 +1,4 @@
 import numpy as np
-import tcutilsave
 
 def check_setup_model_sim(modelparams, simparams):
 	"""Run this before running loop simulations to check everything is in order"""
