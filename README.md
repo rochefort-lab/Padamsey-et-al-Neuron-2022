@@ -1,11 +1,7 @@
 ------------------------------  
-
-# Padamsey*, Katsanevaki, Dupuy and Rochefort* 
+# Padamsey*, Katsanevaki, Dupuy, and Rochefort* 
 
 ***Neocortex saves energy by reducing coding precision during food scarcity***
-
-Add doi
-
 ------------------------------ 
 
 ## Data repository
@@ -16,28 +12,27 @@ Add link
 
 More details about the code for the computational model can found in the folder [computational-model](computational-model).
 
-
 # List of figures
 
 ## Figure 1
 
-Add Comment.
-
-    A) Add comment
-    B) Add comment
+    D) InVivoPatchClampAnalysis/VoltageClampAnalysis_Movie.m, and functions called within
+    G) InVivoPatchClampAnalysis/CurrentClampAnalysis_Movie.m and functions called within
     
+## Figure 2
+
+    A-C) ExVivoPatchClampAnalysis/EPSCanalysis.m, and functions called within
+    D-F) ExVivoPatchClampAnalysis/MiniAnalysis.m and functions called within
 
 ## Figure 3
 
-Add Comment.
+    C,D,F,G) InVivoPatchClampAnalysis/CurrentClampAnalysis_Movie.m, and functions called within
+    H-K) Computational model - Toy model (python jupyter notebook); computational-model/neuron-model/simu_toy_model_passive.ipynb
 
-    A) Add comment
-    B) Add comment
-    
-Computational model - Toy model (python jupyter notebook).
+## Figure 4
 
-    H-K) computational-model/neuron-model/simu_toy_model_passive.ipynb
-
+    B-K)  InVivoPatchClampAnalysis/CurrentClampAnalysis_Grating.m, and functions called within
+    L) GaussianModel/OrientationTuningGaussianModel.m
 
 ## Figure 5
 
@@ -61,3 +56,29 @@ Computational model - Stochastic model (python jupyter notebook).
 | H       |  Stochastic model - trace | foldername  | name of file | `simu_trace_stochannels.ipynb` |
 | J       |  Stochastic model - I/O curve | foldername  | name of file | `simu_stochastic_model.ipynb` |
 | K-L       |  Stochastic model - tuning curve | foldername  | name of file | `simu_stochastic_model.ipynb` |
+
+## Figure 6
+
+    B,C) CalciumImagingAnalysis/CalciumImagingAnalysisforGratings.m, and functions called within
+    D) CalciumImagingAnalysis/CalciumImagingAnalysisforNaturalMovie.m, calls MLEDecorderNatStimLOO.m 
+    
+## Figure 7
+
+    C) CalciumImagingAnalysis/CalciumImagingAnalysisforGratings.m, and functions called within
+    D) CalciumImagingAnalysis/CalciumImagingAnalysisforNaturalMovie.m, calls MLEDecorderNatStimLOO.m 
+    
+## Figure S1 
+
+    B) InVivoPatchClampAnalysis/VoltageClampAnalysis_Movie.m, and functions called within
+    
+## Figure S4
+
+    B-D,F) InVivoPatchClampAnalysis/VoltageClampAnalysis_Grating.m, and functions called within
+    
+## Figure S5
+
+    E,F) CalciumImagingAnalysis/MLEDecorderOrientationLOO.m, and functions called within
+    
+## Figure S6
+
+    C-H) CalciumImagingAnalysis/CalciumImagingAnalysisforGratings.m, and functions called within
