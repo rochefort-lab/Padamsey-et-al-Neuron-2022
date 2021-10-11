@@ -1,12 +1,9 @@
 ------------------------------  
 # Padamsey*, Katsanevaki, Dupuy, and Rochefort* 
-
-***Neocortex saves energy by reducing coding precision during food scarcity***
 ------------------------------ 
 
-## Data repository
-
-Add link
+## Rochefort lab data repository
+https://datashare.ed.ac.uk/handle/10283/3871
 
 ## Computational model
 
@@ -26,7 +23,7 @@ More details about the code for the computational model can found in the folder 
 
 ## Figure 3
 
-    C,D,F,G) InVivoPatchClampAnalysis/CurrentClampAnalysis_Movie.m, and functions called within
+    C-G) InVivoPatchClampAnalysis/CurrentClampAnalysis_Movie.m, and functions called within
     H-K) Computational model - Toy model (python jupyter notebook); computational-model/neuron-model/simu_toy_model_passive.ipynb
 
 ## Figure 4
@@ -73,7 +70,7 @@ Computational model - Stochastic model (python jupyter notebook).
     
 ## Figure S4
 
-    B-D,F) InVivoPatchClampAnalysis/VoltageClampAnalysis_Grating.m, and functions called within
+    B-F) InVivoPatchClampAnalysis/VoltageClampAnalysis_Grating.m, and functions called within
     
 ## Figure S5
 
