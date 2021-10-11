@@ -3,11 +3,12 @@
 ------------------------------ 
 
 ## Rochefort lab data repository
+
 https://datashare.ed.ac.uk/handle/10283/3871
 
 ## Computational model
 
-More details about the code for the computational model can found in the folder [computational-model](computational-model).
+More details about the code for the computational model can be found in the folder [computational-model](computational-model).
 
 # List of figures
 
@@ -28,17 +29,17 @@ More details about the code for the computational model can found in the folder 
 
 ## Figure 4
 
-    B-K)  InVivoPatchClampAnalysis/CurrentClampAnalysis_Grating.m, and functions called within
+    B-K) InVivoPatchClampAnalysis/CurrentClampAnalysis_Grating.m, and functions called within
     L) GaussianModel/OrientationTuningGaussianModel.m
 
 ## Figure 5
 
-Computational model - Deterministic model (python jupyter notebook).
+Computational model - Deterministic model (python jupyter notebook), [computational-model](computational-model)
 
     B) computational-model/neuron-model/simu_trace_detchannels.ipynb
     C-F) computational-model/neuron-model/simu_deterministic_model.ipynb
     
-Computational model - Stochastic model (python jupyter notebook).
+Computational model - Stochastic model (python jupyter notebook), [computational-model](computational-model)
 
     H) computational-model/neuron-model/simu_trace_stochannels.ipynb
     I-L) computational-model/neuron-model/simu_stochastic_model.ipynb
