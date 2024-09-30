@@ -31,7 +31,7 @@ More details about the code for the computational model can be found in the fold
 
     B-K) InVivoPatchClampAnalysis/CurrentClampAnalysis_Grating.m, and functions called within
     L) GaussianModel/OrientationTuningGaussianModel.m
-
+Tuning curves were normalized to the peak value of the tuning curve per neuron.
 ## Figure 5
 
 Computational model - Deterministic model (python jupyter notebook), [computational-model](computational-model)
@@ -43,17 +43,17 @@ Computational model - Stochastic model (python jupyter notebook), [computational
 
     H) computational-model/neuron-model/simu_trace_stochannels.ipynb
     I-L) computational-model/neuron-model/simu_stochastic_model.ipynb
-
+Tuning curves were normalized to the peak value of the tuning curve per neuron.
 ## Figure 6
 
     B,C) CalciumImagingAnalysis/CalciumImagingAnalysisforGratings.m, and functions called within
     D) CalciumImagingAnalysis/CalciumImagingAnalysisforNaturalMovie.m, calls MLEDecorderNatStimLOO.m 
-    
+Tuning curves were normalized to the peak value of the tuning curve per neuron.    
 ## Figure 7
 
     C) CalciumImagingAnalysis/CalciumImagingAnalysisforGratings.m, and functions called within
     D) CalciumImagingAnalysis/CalciumImagingAnalysisforNaturalMovie.m, calls MLEDecorderNatStimLOO.m 
-    
+Tuning curves were normalized to the peak value of the tuning curve per neuron.    
 ## Figure S1 
 
     B) InVivoPatchClampAnalysis/VoltageClampAnalysis_Movie.m, and functions called within
@@ -61,7 +61,7 @@ Computational model - Stochastic model (python jupyter notebook), [computational
 ## Figure S4
 
     B-F) InVivoPatchClampAnalysis/VoltageClampAnalysis_Grating.m, and functions called within
-    
+Tuning curves were normalized to the peak value of the tuning curve per neuron.    
 ## Figure S5
 
     E,F) CalciumImagingAnalysis/MLEDecorderOrientationLOO.m, and functions called within
@@ -69,3 +69,4 @@ Computational model - Stochastic model (python jupyter notebook), [computational
 ## Figure S6
 
     C-H) CalciumImagingAnalysis/CalciumImagingAnalysisforGratings.m, and functions called within
+Tuning curves were normalized to the peak value of the tuning curve per neuron.
